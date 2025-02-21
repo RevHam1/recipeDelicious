@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Delete {{ course.name }}?</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mt-3 mx-auto w-50">
+      <h5>Are you sure you want to delete this recipe?</h5>
+      <p>{{ card.title }}</p>
+      <img width="150px" src="{{ card.image_url }}" />
+      <br />
+
+      <form action="/delete/{{card.id}}" method="post">
+        {% csrf_token %}
+        <br />
+        <button type="submit" class="btn btn-danger btn-sm">
+          Yes, I want to delete this recipe!
+        </button>
+        <a href="/recipes_saved" role="button" class="btn btn-secondary btn-sm"
+          >No, go back</a
+        >
+      </form>
+    </div>
+  </body>
+</html>
