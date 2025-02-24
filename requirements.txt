@@ -3,7 +3,8 @@ bcrypt==4.2.1
 certifi==2025.1.31
 charset-normalizer==3.4.1
 dj-database-url==2.3.0
-Django==5.1.6
+Django==4.2.12
+# Django==5.1.6
 django-heroku==0.3.1
 idna==3.10
 pillow==11.1.0
