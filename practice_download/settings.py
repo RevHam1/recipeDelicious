@@ -30,9 +30,9 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = ['*']
 # ALLOWED_HOSTS = ['127.0.0.1']
-
+ALLOWED_HOSTS = ['actual-corrinne-homr-7e391458.koyeb.app']
 
 # Application definition
 
@@ -76,7 +76,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'practice_download.wsgi.application'
-
+# recipeCards
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
