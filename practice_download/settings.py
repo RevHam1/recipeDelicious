@@ -22,12 +22,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'iy=mhzhifm+in=a-&eas+)(x11+=l-m2qzwq$#&h7-yy6py_&d'
+# SECRET_KEY = 'iy=mhzhifm+in=a-&eas+)(x11+=l-m2qzwq$#&h7-yy6py_&d'
+SECRET_KEY = config('SECRET_KEY')
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 # ALLOWED_HOSTS = ['127.0.0.1']
 
 
@@ -83,6 +85,22 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': config('DATABASE_NAME'),
+#         'USER': config('DATABASE_USER'),
+#         'PASSWORD': config('DATABASE_PASSWORD'),
+#         'HOST': config('DATABASE_HOST'),
+#         'OPTIONS': {
+#             'sslmode': config('DATABASE_OPTIONS'),
+#         },
+#         # 'OPTIONS': 'sslmode=require',
+#     }
+# }
+
+# sslmode=require
 
 
 # Password validation
