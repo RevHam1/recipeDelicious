@@ -30,16 +30,7 @@ body {
   gap: 20px;
 }
 
-#container-2 {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
-.section {
-  max-width: 90%;
-  margin-left: 20px;
-}
-
 /* Headings & general typography */
 h1 {
   padding-top: 10px;
@@ -77,6 +68,16 @@ button {
   color: red;
   margin: 10px;
 }
+@media (max-width: 575.98px) {
+  #container-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .section {
+    max-width: 90%;
+    margin-left: 20px;
+  }
 
 /* ==================================================================
        Small Devices (Tablet Portrait: min-width: 576px and max-width: 767.98px)
