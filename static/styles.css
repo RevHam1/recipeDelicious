@@ -15,8 +15,8 @@ body {
 }
 
 /* ==================================================================
-       Base Container & Element Styles (Extra Small: Mobile up to 576px)
-       ================================================================== */
+     Base Container & Element Styles (Extra Small: Mobile up to 576px)
+     ================================================================== */
 
 /* Extra Small Devices (Mobile: max-width: 575.98px) */
 /* #container defaults to fluid mobile layout */
@@ -30,7 +30,16 @@ body {
   gap: 20px;
 }
 
+#container-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
+.section {
+  max-width: 90%;
+  margin-left: 20px;
+}
+
 /* Headings & general typography */
 h1 {
   padding-top: 10px;
@@ -68,20 +77,10 @@ button {
   color: red;
   margin: 10px;
 }
-@media (max-width: 575.98px) {
-  #container-2 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .section {
-    max-width: 90%;
-    margin-left: 20px;
-  }
 
 /* ==================================================================
-       Small Devices (Tablet Portrait: min-width: 576px and max-width: 767.98px)
-       ================================================================== */
+     Small Devices (Tablet Portrait: min-width: 576px and max-width: 767.98px)
+     ================================================================== */
 @media (min-width: 576px) and (max-width: 767.98px) {
   #container {
     padding-left: 20px;
@@ -110,8 +109,8 @@ button {
 }
 
 /* ==================================================================
-       Medium Devices (Tablet Landscape: min-width: 768px and max-width: 991.98px)
-       ================================================================== */
+     Medium Devices (Tablet Landscape: min-width: 768px and max-width: 991.98px)
+     ================================================================== */
 @media (min-width: 768px) and (max-width: 991.98px) {
   #container {
     width: 90%;
@@ -135,8 +134,8 @@ button {
 }
 
 /* ==================================================================
-       Large Devices (Small laptops & desktops: min-width: 992px and max-width: 1199.98px)
-       ================================================================== */
+     Large Devices (Small laptops & desktops: min-width: 992px and max-width: 1199.98px)
+     ================================================================== */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   #container {
     width: 1200px;
@@ -162,8 +161,8 @@ button {
 }
 
 /* ==================================================================
-       Extra Large Devices (Larger desktops & wide screens: min-width: 1200px)
-       ================================================================== */
+     Extra Large Devices (Larger desktops & wide screens: min-width: 1200px)
+     ================================================================== */
 @media (min-width: 1200px) {
   #container {
     width: 1350px;
