@@ -1,35 +1,67 @@
+/* ==================================================================
+   Global Reset & Base Styles
+   ================================================================== */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
+  /* Optional: font-family, background-color, etc. */
 }
 
+/* ==================================================================
+       Base Container & Element Styles (Extra Small: Mobile up to 576px)
+       ================================================================== */
+
+/* Extra Small Devices (Mobile: max-width: 575.98px) */
+/* #container defaults to fluid mobile layout */
 #container {
-  width: 1350px;
+  width: 100%;
   margin: 0 auto;
-  padding-left: 130px;
+  padding-left: 10px;
   padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
+#container-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section {
+  max-width: 90%;
+  margin-left: 20px;
+}
+
+/* Headings & general typography */
 h1 {
   padding-top: 10px;
 }
 
-.section {
-  width: 450px;
-  display: inline-block;
-  vertical-align: top;
+header h1 {
+  width: 100%;
+  display: block;
+  text-align: center;
 }
 
+/* Sections start out full-width */
+.section {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Form elements */
 input {
-  margin-left: 30px;
-  width: 200px;
+  width: calc(100% - 20px);
+  margin: 10px;
 }
 
 button {
@@ -40,12 +72,117 @@ button {
   margin-top: 5px;
 }
 
-header h1 {
-  width: 830px;
-  display: inline-block;
-}
-
+/* Error messages */
 .errors {
   color: red;
-  margin-left: 300px;
+  margin: 10px;
+}
+
+/* ==================================================================
+       Small Devices (Tablet Portrait: min-width: 576px and max-width: 767.98px)
+       ================================================================== */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #container {
+    padding-left: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  /* Attempt a two‑column layout for sections */
+  .section {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 2.5%;
+  }
+  header h1 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  input {
+    width: 200px; /* Fixed width if desired */
+    margin-left: 30px;
+  }
+  .errors {
+    margin-left: 20px;
+  }
+}
+
+/* ==================================================================
+       Medium Devices (Tablet Landscape: min-width: 768px and max-width: 991.98px)
+       ================================================================== */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #container {
+    width: 90%;
+    padding-left: 30px;
+  }
+  .section {
+    width: 45%;
+    margin: 2.5%;
+  }
+  header h1 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  input {
+    width: 200px;
+    margin-left: 30px;
+  }
+  .errors {
+    margin-left: 30px;
+  }
+}
+
+/* ==================================================================
+       Large Devices (Small laptops & desktops: min-width: 992px and max-width: 1199.98px)
+       ================================================================== */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #container {
+    width: 1200px;
+    padding-left: 80px;
+  }
+  /* Use fixed widths for columns */
+  .section {
+    width: 450px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px 20px 10px;
+  }
+  header h1 {
+    width: 830px;
+  }
+  input {
+    width: 200px;
+    margin-left: 30px;
+  }
+  .errors {
+    margin-left: 80px;
+  }
+}
+
+/* ==================================================================
+       Extra Large Devices (Larger desktops & wide screens: min-width: 1200px)
+       ================================================================== */
+@media (min-width: 1200px) {
+  #container {
+    width: 1350px;
+    padding-left: 130px;
+  }
+  .section {
+    width: 450px;
+    /* Display as intended on large screens */
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+  }
+  header h1 {
+    width: 830px;
+  }
+  input {
+    width: 200px;
+    margin-left: 30px;
+  }
+  .errors {
+    margin-left: 300px;
+  }
 }

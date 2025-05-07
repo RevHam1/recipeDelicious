@@ -32,7 +32,7 @@ DEBUG = False
 
 # ALLOWED_HOSTS = ['*']
 # ALLOWED_HOSTS = ['127.0.0.1']
-ALLOWED_HOSTS = ['actual-corrinne-homr-7e391458.koyeb.app']
+ALLOWED_HOSTS = ['actual-corrinne-homr-7e391458.koyeb.app', 'localhost','127.0.0.1']
 
 # Application definition
 
