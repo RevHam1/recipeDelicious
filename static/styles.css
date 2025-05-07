@@ -88,6 +88,10 @@ button {
     flex-wrap: wrap;
     gap: 20px;
   }
+  #container-2 {
+    display: flex; /* Enables side-by-side layout */
+    gap: 10px; /* Spacing between children */
+  }
   /* Attempt a two‑column layout for sections */
   .section {
     width: 45%;
