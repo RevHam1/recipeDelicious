@@ -115,7 +115,7 @@ button {
 /* ==================================================================
      Medium Devices (Tablet Landscape: min-width: 768px and max-width: 991.98px)
      ================================================================== */
-@media (min-width: 768px) and (max-width: 991.98px) {
+/* @media (min-width: 768px) and (max-width: 991.98px) {
   #container {
     width: 90%;
     padding-left: 30px;
@@ -132,6 +132,40 @@ button {
     width: 200px;
     margin-left: 30px;
   }
+  .errors {
+    margin-left: 30px;
+  }
+} */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #container {
+    width: 90%;
+    padding-left: 30px;
+  }
+
+  #container-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .section {
+    width: 45%;
+    margin: 2.5% 0;
+  }
+
+  header h1 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  input {
+    width: 200px;
+    margin-left: 30px;
+  }
+
   .errors {
     margin-left: 30px;
   }
