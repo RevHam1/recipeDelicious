@@ -154,6 +154,7 @@ button {
   .section {
     width: 45%;
     margin: 2.5% 0;
+    display: inline-block;
   }
 
   header h1 {
@@ -186,6 +187,21 @@ button {
     vertical-align: top;
     margin: 0 10px 20px 10px;
   }
+
+  #container-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  /* .section {
+    width: 45%;
+    display: inline-block;
+    margin: 2.5% 0;
+  } */
+
   header h1 {
     width: 830px;
   }
@@ -206,6 +222,14 @@ button {
     width: 1350px;
     padding-left: 130px;
   }
+  #container-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
   .section {
     width: 450px;
     /* Display as intended on large screens */
